@@ -15,7 +15,7 @@ function callbackFunction(a) {
 
 function favorites(x, y, cb) {
   let favColors = `My favorite colors are ${x} and ${y}`;
-  return callbackFunction(favColors)
+  return cb(favColors)
 }
 
 favorites(colors[3], colors[4], callbackFunction);

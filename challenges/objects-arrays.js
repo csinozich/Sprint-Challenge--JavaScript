@@ -167,7 +167,11 @@ console.log(lowerCase);
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const largerPopulation = [];
+const largerPopulation = zooAnimals.filter(function (element) {
+  if (element.population < 5) {
+    return element;
+  }
+})
 console.log(largerPopulation);
 
 /* Request 4: .reduce()
